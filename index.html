@@ -3717,7 +3717,7 @@ async function downloadReport(format) {
   status.textContent = 'Preparando…';
   try {
     const base = /script\.google|googleusercontent/.test(location.hostname)
-      ? 'https://gabriel-loiola-jca.github.io/helios-mercado/' : location.href;
+      ? 'https://revenue-jca.github.io/helios/' : location.href;
     reportScript ??= new Promise((resolve, reject) => {
       const script = document.createElement('script');
       script.src = new URL('report-export.js', base).href;
